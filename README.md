@@ -7,3 +7,4 @@ KULLANILAN PAKETLER
 -Nodemon
 -JSONWebToken
 -DotEnv
+-Mysql
