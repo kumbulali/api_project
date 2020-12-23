@@ -1,16 +1,12 @@
 const { 
-    createProfile,
     updateProfile,
     getProfileByUserId
 } = require('./profiles.controller');
-
-
+const { checkToken } = require("../../auth/token_validation");
 const router = require("express").Router();
 
 
-
-router.post("/",createProfile);
-router.get("/:id", getProfileByUserId);
-router.patch("/",updateProfile);
+router.get("/:id", checkToken,getProfileByUserId);
+router.patch("/", checkToken,updateProfile);
 
 module.exports = router;
