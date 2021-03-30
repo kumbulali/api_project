@@ -1,6 +1,8 @@
 # api_project
 
-KULLANILAN PAKETLER
+An API that is developed for a non-released multi-platform APP.
+
+Used NPM packages:
 
 -Express
 -Bcrypt
